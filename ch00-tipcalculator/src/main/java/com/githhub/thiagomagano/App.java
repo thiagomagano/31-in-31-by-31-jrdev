@@ -1,5 +1,7 @@
 package com.githhub.thiagomagano;
 
+import java.math.BigDecimal;
+import java.math.RoundingMode;
 import java.util.Scanner;
 
 /**
@@ -18,9 +20,15 @@ public class App
         String inputAmount = sc.nextLine();
         System.out.print("Qual é a porcentagem da gorjeta? ");
         String inputTipRate = sc.nextLine();
+ 
+     
+
+        
 
         double billAmount = Double.parseDouble(inputAmount);
         int tipRate = Integer.parseInt(inputTipRate);
+        
+
         
         TipCalculator tc = new TipCalculator(billAmount, tipRate);
         
