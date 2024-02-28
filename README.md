@@ -22,8 +22,8 @@
 
 ### 2. Input, Processing, and Output
 
-- [ ] 01. Saying Hello
-- [ ] 02. Counting the Number of Characters
+- [x] 01. Saying Hello
+- [x] 02. Counting the Number of Characters
 - [ ] 03. Printing Quotes
 - [ ] 04. Mad Lib
 - [ ] 05. Simple Math
