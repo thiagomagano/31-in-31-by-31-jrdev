@@ -18,7 +18,7 @@
 
 ### 1. Turning Problems into Code
 
-- [ ] 00. Tip Calculator
+- [x] 00. Tip Calculator
 
 ### 2. Input, Processing, and Output
 
