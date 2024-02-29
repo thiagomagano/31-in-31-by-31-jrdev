@@ -43,4 +43,13 @@ public class SimpleCalculator {
     public static int divide(int x, int y) {
         return x / y;
     }
+
+    public String print() {
+        String addStr = "%d + %d = %d".formatted(this.numX, this.numY, add());
+        String subStr = "%d - %d = %d".formatted(this.numX, this.numY, sub());
+        String multiStr = "%d * %d = %d".formatted(this.numX, this.numY, multi());
+        String divideStr = "%d / %d = %d".formatted(this.numX, this.numY, divide());
+
+        return "%s\n%s\n%s\n%s".formatted(addStr, subStr, multiStr, divideStr);
+    }
 }

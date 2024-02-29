@@ -25,7 +25,7 @@
 - [x] [01. Saying Hello](ch01-sayinghello)
 - [x] [02. Counting the Number of Characters](ch02-coutingcharacters)
 - [x] [03. Printing Quotes](ch03-printingquotes)
-- [ ] 04. Mad Lib
+- [x] [04. Mad Lib](ch04-madlib)
 - [ ] 05. Simple Math
 - [ ] 06. Retirement Calculator
 
