@@ -18,13 +18,13 @@
 
 ### 1. Turning Problems into Code
 
-- [x] [00. Tip Calculator](https://github.com/thiagomagano/31-in-31-by-31-jrdev/tree/main/ch00-tipcalculator)
+- [x] [00. Tip Calculator](ch00-tipcalculator)
 
 ### 2. Input, Processing, and Output
 
-- [x] [01. Saying Hello](ch01-sayinghello/README.md)
-- [x] 02. Counting the Number of Characters
-- [x] 03. Printing Quotes
+- [x] [01. Saying Hello](ch01-sayinghello)
+- [x] [02. Counting the Number of Characters](ch02-coutingcharacters)
+- [x] [03. Printing Quotes](ch03-printingquotes)
 - [ ] 04. Mad Lib
 - [ ] 05. Simple Math
 - [ ] 06. Retirement Calculator
