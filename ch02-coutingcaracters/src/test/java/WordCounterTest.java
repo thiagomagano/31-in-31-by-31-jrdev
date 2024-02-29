@@ -1,4 +1,4 @@
-import com.thiagomagano.WordCounter;
+import com.thiagomagano.Word;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -10,7 +10,7 @@ public class WordCounterTest {
     public void shouldCountWordCorrect() {
         String word = "Homer";
         int want = 5;
-        int got = WordCounter.wordCount(word);
+        int got = Word.wordCount(word);
 
         assertEquals(want, got);
     }

@@ -1,6 +1,6 @@
 package com.thiagomagano;
 
-public class WordCounter {
+public class Word {
 
     public static int wordCount(String word) {
         return word.length();
