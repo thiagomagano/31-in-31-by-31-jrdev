@@ -26,7 +26,7 @@
 - [x] [02. Counting the Number of Characters](ch02-coutingcharacters)
 - [x] [03. Printing Quotes](ch03-printingquotes)
 - [x] [04. Mad Lib](ch04-madlib)
-- [ ] 05. Simple Math
+- [x] [05. Simple Math](ch05-simplemath)
 - [ ] 06. Retirement Calculator
 
 ### 3. Calculations
