@@ -14,15 +14,19 @@ public final class App {
 
         Scanner sc = new Scanner(System.in);
 
-        System.out.print("What is the quote? ");
-        String quote = sc.nextLine();
+        // System.out.print("What is the quote? ");
+        // String quote = sc.nextLine();
 
-        System.out.print("Who said it? ");
-        String author = sc.nextLine();
+        // System.out.print("Who said it? ");
+        // String author = sc.nextLine();
 
-        Quote q = new Quote(quote, author);
+        // Quote q = new Quote(quote, author);
 
-        System.out.println(q.printQuote());
+        // System.out.println(q.printQuote("", ""));
+
+        Quote q = new Quote();
+
+        System.err.println(q.RandomQuote());
 
     }
 }

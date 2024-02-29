@@ -20,6 +20,6 @@ class AppTest {
     void quoteTest() {
         Quote q = new Quote("These aren't the droids you're looking for.", "Obi-Wan Kenobi");
         String want = "Obi-Wan Kenobi says, \"These aren't the droids you're looking for.\"";
-        assertEquals(want, q.printQuote());
+        assertEquals(want, q.printQuote("", ""));
     }
 }
