@@ -18,7 +18,7 @@
 
 ### 1. Turning Problems into Code
 
-- [x] 00. Tip Calculator
+- [x] [00. Tip Calculator](https://github.com/thiagomagano/31-in-31-by-31-jrdev/tree/main/ch00-tipcalculator)
 
 ### 2. Input, Processing, and Output
 
