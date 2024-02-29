@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CH02 - Couting Characacters</title>
+    <style>
+        body {
+            display: grid;
+            place-items: center;
+            height: 100vh;
+            background-color: #1e1e1e;
+            color: white;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div>
+        <h1>Challenge 02 - Counting Characacters</h1>
+        <label for="input">What is the input String?</label>
+        <input type="text" placeholder="Some word" id="strInput" />
+        <p>This is word has <span id="size">0</span> characters</p>
+
+    </div>
+
+</body>
+
+<script>
+    document.getElementById("strInput").addEventListener("input", (strInput) => {
+        document.getElementById("size").innerHTML = strInput.target.value.length;
+    });
+
+</script>
+
+</html>
