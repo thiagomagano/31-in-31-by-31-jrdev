@@ -12,7 +12,7 @@ class AppTest {
     void madlibTest() {
         Game madlib = new Game("noun", "verb", "adjective", "adverb");
 
-        String want = "Do your verb your adjective noun adverb? That's hilarious";
+        String want = "Do you verb your adjective noun adverb? That's hilarious";
 
         String got = madlib.play();
 

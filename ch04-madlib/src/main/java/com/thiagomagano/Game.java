@@ -17,7 +17,7 @@ public class Game {
         this.adjective = adjective;
         this.adverb = adverb;
 
-        this.blankSentence = "Do your %s your %s %s %s? That's hilarious";
+        this.blankSentence = "Do you %s your %s %s %s? That's hilarious";
     }
 
     public String play() {
