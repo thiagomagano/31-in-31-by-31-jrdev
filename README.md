@@ -22,7 +22,7 @@
 
 ### 2. Input, Processing, and Output
 
-- [x] 01. Saying Hello
+- [x] [01. Saying Hello](ch01-sayinghello/README.md)
 - [x] 02. Counting the Number of Characters
 - [x] 03. Printing Quotes
 - [ ] 04. Mad Lib
