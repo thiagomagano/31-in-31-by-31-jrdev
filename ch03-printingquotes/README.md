@@ -31,4 +31,4 @@ Test in this string must have quote marks.
 
 ## Extra Challenge
 
-- [ ] Modify this program so that instead of prompting for quotes from the user, you create a structure that holds quotes and their associated attributions and then display all of the quotes using the format in the example. An array of maps would be a good choice.
+- [x] Modify this program so that instead of prompting for quotes from the user, you create a structure that holds quotes and their associated attributions and then display all of the quotes using the format in the example. An array of maps would be a good choice.

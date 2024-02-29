@@ -1,14 +1,12 @@
 package com.thiagomagano;
 
-import java.util.HashMap;
-import java.util.Map;
+import java.util.ArrayList;
 import java.util.Random;
 
 public class Quote {
-    String author = "Uknow";
+    String author = "Unknow";
     String quote = "Nada Disse";
-
-    Map<String, String> mapOfQuotes = new HashMap<>();
+    ArrayList<Quote> listQuotes = new ArrayList<>();
 
     public Quote(String quote, String author) {
         this.quote = quote;
@@ -20,27 +18,33 @@ public class Quote {
     }
 
     public String printQuote(String quote, String author) {
-        if (quote == "" || author == "") {
-            return this.author + " says, " + "\"" + this.quote + "\"";
-        }
+
         return author + " says, " + "\"" + quote + "\"";
     }
 
-    public String RandomQuote() {
+    public String printQuote() {
 
-        mapOfQuotes.put("All i know is that i know nothing", "Sócrates");
-        mapOfQuotes.put("With great power there must also comes great responsability", "Uncle Ben");
-        mapOfQuotes.put("So Beautiful", "Mom");
-        mapOfQuotes.put("O Impossível é só questão de opinião", "Chorão CBJR");
-        mapOfQuotes.put("O Impossível é só questão de opinião", "Chorão CBJR");
+        return this.author + " says, " + "\"" + this.quote + "\"";
+    }
+
+    public String RandomQuote() {
+        Quote q1 = new Quote("All i know is that i know nothing", "Sócrates");
+        Quote q2 = new Quote("With great power there must also comes great responsability", "Uncle Ben");
+        Quote q3 = new Quote("So Beautiful", "Mom");
+        Quote q4 = new Quote("O Impossível é só questão de opinião", "Chorão CBJR");
+        Quote q5 = new Quote("Well Done is better than well said", "Beijamin Frankilin");
+
+        listQuotes.add(q1);
+        listQuotes.add(q2);
+        listQuotes.add(q3);
+        listQuotes.add(q4);
+        listQuotes.add(q5);
 
         Random r = new Random();
-        int randomIndex = r.nextInt(mapOfQuotes.size());
+        int randomIndex = r.nextInt(listQuotes.size());
 
-        String randomQuote = (String) mapOfQuotes.keySet().toArray()[randomIndex];
+        Quote randomQuote = listQuotes.get(randomIndex);
 
-        String author = mapOfQuotes.get(randomQuote);
-
-        return printQuote(randomQuote, author);
+        return printQuote(randomQuote.quote, randomQuote.author);
     }
 }

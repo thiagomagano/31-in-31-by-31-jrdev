@@ -24,9 +24,11 @@ public final class App {
 
         // System.out.println(q.printQuote("", ""));
 
-        Quote q = new Quote();
+        for (int i = 0; i < 10; i++) {
+            Quote q = new Quote();
 
-        System.err.println(q.RandomQuote());
+            System.err.println(q.RandomQuote() + "\n");
+        }
 
     }
 }
