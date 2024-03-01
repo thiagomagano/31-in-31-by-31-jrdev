@@ -45,11 +45,13 @@ public class SimpleCalculator {
     }
 
     public String print() {
-        String addStr = "%d + %d = %d".formatted(this.numX, this.numY, add());
-        String subStr = "%d - %d = %d".formatted(this.numX, this.numY, sub());
-        String multiStr = "%d * %d = %d".formatted(this.numX, this.numY, multi());
-        String divideStr = "%d / %d = %d".formatted(this.numX, this.numY, divide());
+        String srtResult = SRT."""
+            \{this.numX} + \{this.numY} = \{add()}
+            \{this.numX} - \{this.numY} = \{sub()}
+            \{this.numX} * \{this.numY} = \{multi()}
+            \{this.numX} / \{this.numY} = \{divide()}
+        """;
 
-        return "%s\n%s\n%s\n%s".formatted(addStr, subStr, multiStr, divideStr);
+        return srtResult;
     }
 }

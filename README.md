@@ -27,7 +27,7 @@
 - [x] [03. Printing Quotes](ch03-printingquotes)
 - [x] [04. Mad Lib](ch04-madlib)
 - [x] [05. Simple Math](ch05-simplemath)
-- [ ] 06. Retirement Calculator
+- [x] [06. Retirement Calculator](ch06-retirementcalculator)
 
 ### 3. Calculations
 

@@ -19,6 +19,7 @@
     <jacoco.unit-tests.limit.branch-ratio>0%</jacoco.unit-tests.limit.branch-ratio>
     <jacoco.unit-tests.limit.class-complexity>20</jacoco.unit-tests.limit.class-complexity>
     <jacoco.unit-tests.limit.method-complexity>5</jacoco.unit-tests.limit.method-complexity>
+
   </properties>
   <dependencies>
     <dependency>
@@ -158,7 +159,15 @@
             </configuration>
           </execution>
         </executions>
-      </plugin>
+      </plugin><plugin>
+      <groupId>org.apache.maven.plugins</groupId>
+      <artifactId>maven-compiler-plugin</artifactId>
+      <configuration>
+        <source>21</source>
+        <target>21</target>
+        <compilerArgs>--enable-preview</compilerArgs>
+      </configuration>
+    </plugin>
     </plugins>
   </build>
   <reporting>
