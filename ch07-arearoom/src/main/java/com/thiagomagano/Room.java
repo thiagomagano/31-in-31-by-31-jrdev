@@ -1,7 +1,6 @@
 package com.thiagomagano;
 
 import java.math.BigDecimal;
-import java.math.MathContext;
 import java.math.RoundingMode;
 
 public class Room {
@@ -15,17 +14,22 @@ public class Room {
         this.width = width;
     }
 
-    public double calcSquareFeet() {
+    public double calcSquare() {
         return length * width;
     }
 
-    public BigDecimal convertAreaToMeters() {
+    public BigDecimal convertArea(String op) {
 
-        double areaInFeet = calcSquareFeet();
+        double area = calcSquare();
+        BigDecimal convertedArea;
 
-        BigDecimal areaInMeters = BigDecimal.valueOf(areaInFeet * this.CONVERSION_FACTOR);
+        if (op.equals("feet")) {
+            convertedArea = BigDecimal.valueOf(area * this.CONVERSION_FACTOR);
+        } else {
+            convertedArea = BigDecimal.valueOf(area / this.CONVERSION_FACTOR);
+        }
 
-        return areaInMeters.setScale(3, RoundingMode.HALF_UP);
-
+        return convertedArea.setScale(3, RoundingMode.HALF_UP);
     }
+
 }
