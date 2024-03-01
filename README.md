@@ -31,7 +31,7 @@
 
 ### 3. Calculations
 
-- [ ] 07. Area of a Rectangular Room
+- [x] [07. Area of a Rectangular Room](ch07-arearoom)
 - [ ] 08. Pizza Party
 - [ ] 09. Paint Calculator
 - [ ] 10. Self-Checkout
