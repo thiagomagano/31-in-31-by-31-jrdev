@@ -9,16 +9,25 @@ public class RetirementCalculator {
     int retirementYear;
     int actualYear;
 
+    boolean isRetireAge;
+
     public RetirementCalculator(int age, int retirementAge) {
         this.age = age;
         this.retirementAge = retirementAge;
 
         this.yearsUntilRetirement = getYearsUntilRetirement();
 
+        if (this.yearsUntilRetirement <= 0) {
+            this.isRetireAge = true;
+        } else {
+            this.isRetireAge = false;
+        }
+
         LocalDate today = LocalDate.now();
 
         this.actualYear = today.getYear();
         this.retirementYear = getYearOfRetirementFromNow();
+
     }
 
     public int getYearsUntilRetirement() {
@@ -39,6 +48,9 @@ public class RetirementCalculator {
     }
 
     public String printRetirementMessage() {
+        if (this.isRetireAge) {
+            return "You can already Retire!";
+        }
         String str = "You have " + yearsUntilRetirement + " years left until you can retire. It's " + actualYear
                 + ", so you can retire in " + retirementYear + ".";
 
