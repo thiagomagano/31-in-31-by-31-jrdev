@@ -13,7 +13,7 @@ public class SayHelloTest {
 
     @Test
     public void ShouldSayHelloCorrect() {
-        String name = "Brian";
+        String name = "Thiago";
         String want = String.format("Hello, %s, nice to meet you!", name);
         String got = SayHello.greeting(name);
 

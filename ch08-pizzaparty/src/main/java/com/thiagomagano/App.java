@@ -2,10 +2,6 @@ package com.thiagomagano;
 
 import java.util.Scanner;
 
-/**
- * Hello world!
- *
- */
 public class App {
     public static void main(String[] args) {
         System.out.println("Challenge 08 - Pizza Party");
@@ -35,5 +31,6 @@ public class App {
 
         System.out.println("There are " + pizzaCalc.leftover + " leftover pieces");
 
+        in.close();
     }
 }

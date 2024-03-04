@@ -19,7 +19,6 @@ public class Room {
     }
 
     public BigDecimal convertArea(String op) {
-
         double area = calcSquare();
         BigDecimal convertedArea;
 

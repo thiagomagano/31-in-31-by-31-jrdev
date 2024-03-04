@@ -32,7 +32,7 @@
 ### 3. Calculations
 
 - [x] [07. Area of a Rectangular Room](ch07-arearoom)
-- [ ] 08. Pizza Party
+- [x] [08. Pizza Party](ch08-pizzaparty)
 - [ ] 09. Paint Calculator
 - [ ] 10. Self-Checkout
 - [ ] 11. Currency Conversion
