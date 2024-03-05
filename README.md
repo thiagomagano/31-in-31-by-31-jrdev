@@ -8,7 +8,7 @@
 - **Title**: 31 (*code challenges*) in 31 (*days*) by a (*31* years) Jr developer.
 - **Short-Title**: 31-in-31-by-31-jrdev
 - **Goal**: Solve at least 31 challenges from the book [Exercise for Programers: 57 challenges to develop your coding Skiils](https://www.amazon.com.br/Exercises-Programmers-Brian-Hogan/dp/1680501224?ref=d6k_applink_bb_dls&dplnkId=16829f40-e82d-4860-9020-5e614d5dbd2e) in 31 days using Java and TDD.
-- **Why**: I want to improve my Java and learn TDD. With this book provides practical challenges from basic to advanced and also helps with problem solving. I think it's a fun way to develop these skills.
+- **Why**: I want to improve my Java and learn TDD. This book also helps to improve problem solving skill. It's provides practical challenges starting from the basics to the advanced. I think it's a fun way to develop these three skills.
 - **Start Date**: February 28, 2024.
 - **Deadline**: March 30, 2024.
 - **Ideal Peace**: 1 challenge solved every day, a ~ 2 hours each
