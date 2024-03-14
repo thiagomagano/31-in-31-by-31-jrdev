@@ -1,7 +1,6 @@
 import { BRL } from "./utils";
-import type { Icheckout, Iitem, IcheckoutItem } from "./interfaces";
 
-export class Item implements Iitem {
+export class Item {
   price: number;
 
   constructor(price: number) {
@@ -13,52 +12,68 @@ export class Item implements Iitem {
   }
 }
 
-export class CheckoutItem implements IcheckoutItem {
-  item: Item;
-  qtd: number;
-
-  constructor(i: Item, qtd: number) {
-    this.item = i;
-    this.qtd = qtd;
-  }
-  getTotal(): number {
-    return this.item.price * this.qtd;
-  }
-
-  getTotalAsMoney(): string {
-    const total = this.getTotal();
-    return BRL.convert(total);
-  }
-}
-
-export class Checkout implements Icheckout {
-  items: IcheckoutItem[];
+export class Checkout {
+  private items: Item[];
   readonly TAX_RATE = 5.5;
 
-  subtotal: number;
-  tax: number;
-  total: number;
+  private subtotal: number;
+  private tax: number;
+  private total: number;
 
-  constructor(items: IcheckoutItem[]) {
-    this.items = items;
-    this.subtotal = this.calcSubTotal();
-    this.tax = this.calcTax();
-    this.total = this.calcTotal();
+  constructor() {
+    this.items = [];
+    this.subtotal = 0;
+    this.tax = 0;
+    this.total = 0;
   }
 
-  calcSubTotal(): number {
+  addItem(item: Item, qtd: number): void {
+    for (let i = 0; i < qtd; i++) {
+      this.items.push(item);
+    }
+  }
+
+  listItems(): void {
+    this.items.forEach((item) => console.table(item));
+  }
+
+  calcSubTotal(): void {
+    this.items.forEach((item) => (this.subtotal = this.subtotal + item.price));
+  }
+
+  calcTax(): void {
+    this.tax = this.subtotal * (this.TAX_RATE / 100);
+  }
+
+  calcTotal(): void {
+    this.total = this.subtotal + this.tax;
+  }
+
+  getSubTotal(): number {
+    this.calcSubTotal();
+    return this.subtotal;
+  }
+  getTax(): number {
+    this.calcTax();
+    return this.tax;
+  }
+  getTotal(): number {
+    this.calcTotal();
+    return this.total;
+  }
+
+  // Static Methods
+
+  static calcSubTotal(itens: Item[]): number {
     let subTotal = 0;
-
-    this.items.forEach((item) => (subTotal = subTotal + item.getTotal()));
-
+    itens.forEach((item) => (subTotal = subTotal + item.price));
     return subTotal;
   }
-
-  calcTax(): number {
-    return this.subtotal * (this.TAX_RATE / 100);
+  static calcTax(amount: number, taxRate: number): number {
+    return amount * (taxRate / 100);
   }
 
-  calcTotal(): number {
-    return this.subtotal + this.tax;
+  static calcTotal(subtotal: number, tax: number): number {
+    return subtotal + tax;
   }
 }
