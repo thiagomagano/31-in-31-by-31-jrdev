@@ -12,13 +12,20 @@ checkout.addItem(item2, 1);
 checkout.addItem(item3, 1);
 
 describe("Testing Checkout methods", () => {
-  it("Calc Subtotal", () => {
+  it("Should add itens to checkout", () => {
+    const newCheckout = new Checkout();
+    newCheckout.addItem(item1, 5);
+
+    expect(newCheckout.getItems()).toHaveLength(5);
+  });
+
+  it("Should Calculate Subtotal correctly", () => {
     expect(checkout.getSubTotal()).toBe(64);
   });
-  it("Calc Tax", () => {
+  it("Should Calculate Tax correctly", () => {
     expect(checkout.getTax()).toBe(3.52);
   });
-  it("Calc Total", () => {
+  it("Should Calculate Total correctly", () => {
     expect(checkout.getTotal()).toBe(67.52);
   });
 });

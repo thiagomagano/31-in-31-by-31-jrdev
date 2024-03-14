@@ -37,6 +37,10 @@ export class Checkout {
     this.items.forEach((item) => console.table(item));
   }
 
+  getItems(): Item[] {
+    return this.items;
+  }
+
   calcSubTotal(): void {
     this.items.forEach((item) => (this.subtotal = this.subtotal + item.price));
   }
