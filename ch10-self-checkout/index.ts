@@ -1,6 +1,5 @@
 import { Item, Checkout } from "./classes";
 import { BRL } from "./utils";
-import inquirer from "inquirer";
 
 const item1 = new Item(25);
 const item2 = new Item(10);

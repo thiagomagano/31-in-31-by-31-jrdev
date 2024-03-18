@@ -1,11 +1,11 @@
 # Project - "31 in 31 By a 31 Jr Dev."
 
-> *I have 57 problems and implementing 'Hello World' for the 5467845th time is not one"*
+> _I have 57 problems and implementing 'Hello World' for the 5467845th time is not one"_
 > Jay-C++
 
 ## This Project in a Nutshell:
 
-- **Title**: 31 (*code challenges*) in 31 (*days*) by a (*31* years) Jr developer.
+- **Title**: 31 (_code challenges_) in 31 (_days_) by a (_31_ years) Jr developer.
 - **Short-Title**: 31-in-31-by-31-jrdev
 - **Goal**: Solve at least 31 challenges from the book [Exercise for Programers: 57 challenges to develop your coding Skiils](https://www.amazon.com.br/Exercises-Programmers-Brian-Hogan/dp/1680501224?ref=d6k_applink_bb_dls&dplnkId=16829f40-e82d-4860-9020-5e614d5dbd2e) in 31 days using Java and TDD.
 - **Why**: I want to improve my Java and learn TDD. This book also helps to improve problem solving skill. It's provides practical challenges starting from the basics to the advanced. I think it's a fun way to develop these three skills.
@@ -34,7 +34,7 @@
 - [x] [07. Area of a Rectangular Room](ch07-arearoom)
 - [x] [08. Pizza Party](ch08-pizzaparty)
 - [x] [09. Paint Calculator](ch09-paitingcalculator)
-- [ ] 10. Self-Checkout
+- [x] [10. Self-Checkout](ch10-self-checkout)
 - [ ] 11. Currency Conversion
 - [ ] 12. Computing Simple Interest
 - [ ] 13. Determining Compound Interest
