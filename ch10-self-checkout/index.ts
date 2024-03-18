@@ -1,5 +1,6 @@
 import { Item, Checkout } from "./classes";
 import { BRL } from "./utils";
+import inquirer from "inquirer";
 
 const item1 = new Item(25);
 const item2 = new Item(10);
@@ -10,8 +11,6 @@ const checkout = new Checkout();
 checkout.addItem(item1, 2);
 checkout.addItem(item2, 1);
 checkout.addItem(item3, 1);
-
-checkout.listItems();
 
 console.log("Subtotal: ", BRL.convert(checkout.getSubTotal()));
 
