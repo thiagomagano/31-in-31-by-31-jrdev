@@ -36,8 +36,8 @@
 - [x] [09. Paint Calculator](ch09-paitingcalculator)
 - [x] [10. Self-Checkout](ch10-self-checkout)
 - [x] [11. Currency Conversion](ch11-currency-conversion)
-- [x] [12. Computing Simple Interest](c11-simple-interest)
-- [ ] 13. Determining Compound Interest
+- [x] [12. Computing Simple Interest](ch12-simple-interest)
+- [x] [13. Determining Compound Interest](c13-compound-interest)
 
 ### 4. Making Decision
 
