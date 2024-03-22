@@ -1,3 +1,5 @@
+import Money from "../../utils/Money";
+
 export default class Investiment {
   readonly amount: number;
   readonly rate: number;
@@ -14,11 +16,11 @@ export default class Investiment {
   }
 
   public calculate(): number {
-    return this.amount * (1 + (this.rate / 100) * this.time);
+    return Money.round(this.amount * (1 + (this.rate / 100) * this.time));
   }
 
   public static calculate(amount: number, rate: number, time: number): number {
-    return amount * (1 + (rate / 100) * time);
+    return Money.round(amount * (1 + (rate / 100) * time));
   }
 
   public printWorth(): string {
