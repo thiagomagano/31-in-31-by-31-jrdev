@@ -35,7 +35,7 @@
 - [x] [08. Pizza Party](ch08-pizzaparty)
 - [x] [09. Paint Calculator](ch09-paitingcalculator)
 - [x] [10. Self-Checkout](ch10-self-checkout)
-- [ ] 11. Currency Conversion
+- [x] [11. Currency Conversion](ch11-currency-conversion)
 - [ ] 12. Computing Simple Interest
 - [ ] 13. Determining Compound Interest
 
