@@ -45,7 +45,7 @@ compounded 4 times per year is $1938.84.
 
 ## Challenges
 
-- [ ] Ensure that all of the inputs are numeric and that the program will not let the user proceed without valid inputs.
+- [x] Ensure that all of the inputs are numeric and that the program will not let the user proceed without valid inputs.
 - [ ] Create a version of the program that works in reverse,
       so you can determine the initial amount you’d need to
       invest to reach a specific goal.
@@ -56,8 +56,26 @@ compounded 4 times per year is $1938.84.
 
 ## Thinking about the Problem
 
+- The same was the 12, but with another formula to calculate the interest.
+
 ## Tests
 
 ```typescript
+describe("Objects with state", () => {
+  const inv = new Investiment(1500, 4.3, 6, 4);
 
+  it("Should calculate the worth of compound interest: ", () => {
+    const got = inv.calculateCompound();
+
+    expect(got).toBe(want);
+  });
+
+  it("Should printh message correctly", () => {
+    const want =
+      "$1500 invested at 4.3% for 6 years compounded 4 times per year is $1938.84.";
+    const got = inv.printWorthCompound();
+
+    expect(got).toBe(want);
+  });
+});
 ```
