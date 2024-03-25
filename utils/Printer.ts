@@ -1,4 +1,4 @@
-export class Printer {
+export default class Printer {
   public static stars(message: string): void {
     for (const w of message) {
       process.stdout.write("*");

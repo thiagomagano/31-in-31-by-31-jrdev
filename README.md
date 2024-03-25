@@ -41,7 +41,7 @@
 
 ### 4. Making Decision
 
-- [ ] 14. Tax Calculator
+- [x] [14. Tax Calculator](ch14-tax-calculator)
 - [ ] 15. Password Validation
 - [ ] 16. Legal Driving Age
 - [ ] 17. Blood Alcohol Calculator
