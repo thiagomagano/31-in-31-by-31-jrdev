@@ -10,7 +10,9 @@ export default class TaxCalculator {
     // Normalize all inputs to uppercase;
     this.state = state.toUpperCase();
 
-    if (this.state === "WI") this.taxRate = WI_TAXT_RATE;
+    if (this.state === "WI" || this.state === "WISCONSIN") {
+      this.taxRate = WI_TAXT_RATE;
+    }
   }
 
   calculate(amount: number, rate?: number): number {

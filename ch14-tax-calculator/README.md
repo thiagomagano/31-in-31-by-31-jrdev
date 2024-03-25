@@ -30,8 +30,8 @@ The Total is $10.00.
 
 ## Challenges
 
-- [ ] Allow the user to enter a state abbreviation in upper, lower, or mixed case.
-- [ ] Also Allow the user to enter the state's full name in upper , lower or mixed case.
+- [x] Allow the user to enter a state abbreviation in upper, lower, or mixed case.
+- [x] Also Allow the user to enter the state's full name in upper , lower or mixed case.
 
 ---
 

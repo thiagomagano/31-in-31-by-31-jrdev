@@ -38,5 +38,21 @@ describe("Tax Calculator", () => {
 
       expect(got).toBe(want);
     });
+    describe("Given a full state name Wisconsin", () => {
+      const want = "WISCONSIN";
+
+      it("Mixed Case", () => {
+        const got = new TaxCalculator("Wisconsin").state;
+        expect(got).toBe(want);
+      });
+      it("Lower Case", () => {
+        const got = new TaxCalculator("wisconsin").state;
+        expect(got).toBe(want);
+      });
+      it("Upper Case", () => {
+        const got = new TaxCalculator("WISCONSIN").state;
+        expect(got).toBe(want);
+      });
+    });
   });
 });
