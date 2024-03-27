@@ -42,7 +42,7 @@
 ### 4. Making Decision
 
 - [x] [14. Tax Calculator](ch14-tax-calculator)
-- [ ] [15. Password Validation](ch15-password-validation)
+- [x] [15. Password Validation](ch15-password-validation)
 - [ ] 16. Legal Driving Age
 - [ ] 17. Blood Alcohol Calculator
 - [ ] 18. Temperature Converter

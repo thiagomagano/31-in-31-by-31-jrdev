@@ -5,10 +5,11 @@ export interface User {
   password: string;
 }
 
+export function checkUsername(users: Map<string, string>, username: string) {
+  return users.has(username);
+}
 export function checkPassword(users: Map<string, string>, user: User): boolean {
-  const found = users.has(user.username);
-
-  if (found) {
+  if (checkUsername(users, user.username)) {
     return users.get(user.username) === user.password;
   }
   return false;
@@ -33,4 +34,5 @@ function main(id: number, title: string): void {
     console.log("I don't know you!");
   }
 }
+
 main(15, "Password Validation");

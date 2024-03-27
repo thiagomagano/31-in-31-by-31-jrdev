@@ -26,7 +26,7 @@ Welcome!
 ## Challenges
 
 - [ ] Investigate how you can prevent the password from being displayed on the screen in clear text when typed.
-- [ ] Create a map of usernames and passwords and ensure the username and password combinations match
+- [x] Create a map of usernames and passwords and ensure the username and password combinations match
 - [ ] Encode the passwords using _Bcrypt_ and store the hashes in the map instead of the clear-text passwords. Then, when you prompt for the password, encrypt the password using _Bcrypt_ and compare it with the value in your map
 
 ---
