@@ -32,3 +32,16 @@ Welcome!
 ---
 
 ## Thinking the problem
+
+```typescript
+// Inputs
+
+const username: string;
+const password: string;
+
+// Process
+
+function validateUser(username, password): boolean;
+
+// Outputs
+```

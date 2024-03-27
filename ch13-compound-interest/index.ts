@@ -1,10 +1,10 @@
 import Investiment from "./InvestimentCompound";
 
 import In from "../utils/Input";
-import { Printer } from "../utils/Printer";
+import { Printer } from "../utils/utils";
 
 function main(id: number, title: string) {
-  Printer.open(`Challenge ${id} - ${title}!`);
+  Printer.openMsg(id, title);
 
   const amount = In.readNumber("What is the principal amount? ");
   const rate = In.readNumber("What is the rate? ");

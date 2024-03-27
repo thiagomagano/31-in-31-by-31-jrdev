@@ -1,9 +1,9 @@
-import Printer from "../utils/Printer";
+import { Printer } from "../utils/utils";
 import In from "../utils/Input";
 import TaxCalculator from "./TaxCalculator";
 
 export function main(id: number, title: string): void {
-  Printer.open(`Challenge ${id} - ${title}`);
+  Printer.openMsg(id, title);
 
   const inputAmount = In.readNumber("What is the order amount? ");
   const inputState = prompt("What is the state? ");

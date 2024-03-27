@@ -1,9 +1,9 @@
-import { Printer } from "../utils/Printer";
+import { Printer } from "../utils/utils";
 import In from "../utils/Input";
 import Investiment from "./src/Investiment";
 
 function main(id: number, title: string): void {
-  Printer.open(`Challenge ${id} - ${title}!`);
+  Printer.openMsg(id, title);
 
   const amount = In.readNumber("Enter the principal: ");
   const rate = In.readNumber("Enter the rate of interest: ");
